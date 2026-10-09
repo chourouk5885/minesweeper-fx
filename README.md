@@ -114,7 +114,7 @@ Use `Launcher` rather than `App`; starting a JavaFX `Application` directly from 
 
 Ideas, bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 📄 License
+##  License
 
 [MIT](LICENSE) — free to use, modify and share.
 
