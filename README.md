@@ -17,7 +17,7 @@
 
 ---
 
-## ⚡ Play in 30 seconds
+## Play in 30 seconds
 
 You need **Java 17+** and **Maven**.
 
@@ -31,25 +31,25 @@ That's it. Maven downloads JavaFX for your system (Apple Silicon, Intel, Windows
 
 > **New to Java?** On a Mac: `brew install openjdk@21 maven`. On Windows: install [Temurin JDK](https://adoptium.net) and [Maven](https://maven.apache.org/download.cgi).
 
-## ✨ Why you'll like it
+##  Why you'll like it
 
-**🎯 Fair from the first click.** Your first click is always safe and always opens an area. No more losing on move one.
+** Fair from the first click.** Your first click is always safe and always opens an area. No more losing on move one.
 
-**🌗 Light and dark themes.** Switch instantly from the Options menu. Every colour is tuned for contrast in both.
+** Light and dark themes.** Switch instantly from the Options menu. Every colour is tuned for contrast in both.
 
-**🎬 It feels alive.** Squares press down under your cursor, empty areas open in a quick ripple, and a loss shakes the board before the mines cascade out from the one you hit. Win, and you get confetti.
+** It feels alive.** Squares press down under your cursor, empty areas open in a quick ripple, and a loss shakes the board before the mines cascade out from the one you hit. Win, and you get confetti.
 
-**🧠 Chording for speed players.** When a number has all its mines flagged, click it (or middle-click, or press both buttons) to open every neighbour at once.
+** Chording for speed players.** When a number has all its mines flagged, click it (or middle-click, or press both buttons) to open every neighbour at once.
 
-**⌨️ Play without a mouse.** Arrow keys, Space to reveal, F to flag, C to chord.
+** Play without a mouse.** Arrow keys, Space to reveal, F to flag, C to chord.
 
-**🏆 Stats and a leaderboard.** Win rate, streaks and your top 5 times for each difficulty, saved between sessions.
+** Stats and a leaderboard.** Win rate, streaks and your top 5 times for each difficulty, saved between sessions.
 
-**🧩 Any board you like.** Beginner, Intermediate and Expert presets, or a custom board up to 50 × 30. Big boards shrink to fit your screen.
+** Any board you like.** Beginner, Intermediate and Expert presets, or a custom board up to 50 × 30. Big boards shrink to fit your screen.
 
-**🔊 Optional sound.** Little synthesized blips and booms, off until you turn them on.
+** Optional sound.** Little synthesized blips and booms, off until you turn them on.
 
-## 🎮 Controls
+##  Controls
 
 | Action | Mouse | Keyboard |
 |---|---|---|
@@ -62,7 +62,7 @@ That's it. Maven downloads JavaFX for your system (Apple Silicon, Intel, Windows
 
 On a Mac keyboard, the F-keys may need `fn` (e.g. `fn` + `F2`). `N` always works.
 
-## 📊 Difficulty levels
+##  Difficulty levels
 
 | Level | Board | Mines |
 |---|---|---|
@@ -71,7 +71,7 @@ On a Mac keyboard, the F-keys may need `fn` (e.g. `fn` + `F2`). `N` always works
 | Expert | 30 × 16 | 99 |
 | Custom | 5–50 × 5–30 | up to (cells − 9) |
 
-## 🛠 Under the hood
+##  Under the hood
 
 ```
 minesweeper-fx/
@@ -97,7 +97,7 @@ minesweeper-fx/
 - **No stack overflows.** Flood fill is an iterative breadth-first search, which also drives the ripple animation.
 - **Your data stays local.** Settings and stats live in `~/.minesweeper-fx/`.
 
-## 🧪 Run the tests
+##  Run the tests
 
 ```bash
 mvn test
@@ -105,12 +105,12 @@ mvn test
 
 The tests cover first-click safety, adjacent-mine counts, flood fill, chording, win and loss detection, statistics and saving. They also run automatically on GitHub for every push.
 
-## 💻 Run from an IDE
+##  Run from an IDE
 
 Open the folder as a **Maven project** in IntelliJ IDEA, Eclipse or VS Code and run **`com.minesweeper.Launcher`**.
 Use `Launcher` rather than `App`; starting a JavaFX `Application` directly from the classpath fails with *"JavaFX runtime components are missing"*.
 
-## 🤝 Contributing
+##  Contributing
 
 Ideas, bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
