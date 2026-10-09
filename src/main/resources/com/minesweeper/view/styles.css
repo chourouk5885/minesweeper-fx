@@ -1,0 +1,230 @@
+/*
+ * Minesweeper FX stylesheet.
+ * All colours are "looked-up" variables (-ms-*) defined per theme in Theme.toCss(),
+ * so this file never needs to change when a theme is added or tweaked.
+ */
+
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial";
+    -fx-font-size: 13px;
+    -fx-background-color: -ms-window-bg;
+}
+
+.content {
+    -fx-background-color: -ms-window-bg;
+}
+
+/* ---------------------------------------------------------------- menu bar */
+
+.menu-bar {
+    -fx-background-color: -ms-panel-bg;
+    -fx-border-color: transparent transparent -ms-divider transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 2 6 2 6;
+}
+
+.menu-bar > .container > .menu-button {
+    -fx-background-radius: 5;
+    -fx-padding: 4 10 4 10;
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -ms-text;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -ms-accent;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-background-color: -ms-panel-bg;
+    -fx-border-color: -ms-divider;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.28), 14, 0, 0, 4);
+}
+
+.menu-item {
+    -fx-background-radius: 5;
+    -fx-padding: 5 10 5 6;
+}
+
+.menu-item .label {
+    -fx-text-fill: -ms-text;
+}
+
+.menu-item:focused {
+    -fx-background-color: -ms-accent;
+}
+
+.menu-item:focused .label,
+.menu-item:focused .menu-row .menu-check,
+.menu-item:focused .menu-row .menu-hint {
+    -fx-text-fill: white;
+}
+
+.menu > .right-container > .arrow {
+    -fx-background-color: -ms-muted;
+}
+
+.menu:focused > .right-container > .arrow {
+    -fx-background-color: white;
+}
+
+.separator-menu-item > .line {
+    -fx-border-color: -ms-divider transparent transparent transparent;
+    -fx-padding: 2 0 0 0;
+}
+
+.menu-row .menu-check {
+    -fx-text-fill: -ms-accent;
+    -fx-font-weight: bold;
+}
+
+.menu-row .menu-hint {
+    -fx-text-fill: -ms-muted;
+    -fx-font-size: 12px;
+}
+
+/* ---------------------------------------------------------------- header */
+
+.header-bar {
+    -fx-background-color: -ms-panel-bg;
+    -fx-background-radius: 12;
+    -fx-border-color: -ms-divider;
+    -fx-border-radius: 12;
+    -fx-padding: 8 12 8 12;
+    -fx-spacing: 10;
+}
+
+.led {
+    -fx-background-color: -ms-led-bg;
+    -fx-text-fill: -ms-led-text;
+    -fx-font-family: "Consolas", "DejaVu Sans Mono", "Menlo", "Courier New";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10 0 10;
+    -fx-background-radius: 7;
+    -fx-min-width: 72;
+    -fx-alignment: center;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0, 0, 1);
+}
+
+.face-button {
+    -fx-background-color: -ms-face-bg;
+    -fx-background-radius: 10;
+    -fx-border-color: -ms-divider;
+    -fx-border-radius: 10;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+}
+
+.face-button:hover {
+    -fx-background-color: -ms-face-hover;
+}
+
+.face-button:pressed {
+    -fx-translate-y: 1;
+}
+
+/* ---------------------------------------------------------------- board */
+
+.board-frame {
+    -fx-background-color: -ms-panel-bg;
+    -fx-background-radius: 12;
+    -fx-border-color: -ms-divider;
+    -fx-border-radius: 12;
+    -fx-padding: 10;
+}
+
+/* Tooltips live in their own popup window, so they use fixed colours that suit both themes. */
+.tooltip {
+    -fx-background-color: rgba(30, 33, 40, 0.95);
+    -fx-text-fill: #f2f4f7;
+    -fx-font-size: 12px;
+    -fx-background-radius: 5;
+    -fx-padding: 5 9 5 9;
+}
+
+/* ---------------------------------------------------------------- dialogs */
+
+.dialog-pane {
+    -fx-background-color: -ms-window-bg;
+    -fx-padding: 0;
+}
+
+.dialog-pane > .header-panel {
+    -fx-background-color: -ms-panel-bg;
+    -fx-border-color: transparent transparent -ms-divider transparent;
+    -fx-padding: 14 18 14 18;
+}
+
+.dialog-pane > .header-panel .label {
+    -fx-text-fill: -ms-text;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane > .content {
+    -fx-padding: 16 18 8 18;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: -ms-text;
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-padding: 8 16 14 16;
+}
+
+.dialog-pane .button {
+    -fx-background-radius: 6;
+    -fx-padding: 6 14 6 14;
+}
+
+.dialog-pane .button:default {
+    -fx-base: -ms-accent;
+}
+
+.dialog-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .dialog-big-number {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -ms-accent;
+}
+
+.dialog-pane .dialog-muted,
+.dialog-pane .stat-header {
+    -fx-text-fill: -ms-muted;
+}
+
+.dialog-pane .dialog-accent {
+    -fx-text-fill: -ms-accent;
+    -fx-font-weight: bold;
+}
+
+.stat-header {
+    -fx-font-weight: bold;
+}
+
+.stat-value {
+    -fx-font-size: 14px;
+}
+
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

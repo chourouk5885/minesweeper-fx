@@ -1,0 +1,15 @@
+# Build output
+target/
+out/
+*.class
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# macOS
+.DS_Store
